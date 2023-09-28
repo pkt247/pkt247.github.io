@@ -36,7 +36,8 @@
     --background-default: #444;
     --in-default: #323232;
     --hover: #010408a8;
-    --contact-color:rgb(141 155 151 / 37%);;
+    --contact-color: rgb(141 155 151 / 37%);
+    ;
     --text: #fff;
 }
 
@@ -88,10 +89,10 @@
 
 /* About */
 
-.image img{
+.image img {
     height: 14rem;
     border-radius: 3rem;
-    }
+}
 
 #about {
     padding: 2rem;
@@ -107,12 +108,15 @@
 }
 
 
-/* contact */
-#contact{
-    background: url("../res/social.png") no-repeat;
-    background-size: contain;
-    align-items: center;
-   
+/* payment */
+#payment {
+    padding: 2rem;
+}
+
+.pay {
+    margin: auto;
+    padding: auto;
+
 }
 
 /* footer */
@@ -130,10 +134,6 @@
     float: right;
     display: block;
     text-align: center;
-}
-.copy a{
-    text-decoration: none;
-    color: var(--text);
 }
 
 @media (max-width:1052px) {
@@ -158,16 +158,12 @@
 
     }
 
-    
+
     .footer {
         width: 80vw;
         bottom: 20px;
         margin-left: 8vw;
 
-    }
-
-    #about {
-        padding: 0;
     }
 }
 
