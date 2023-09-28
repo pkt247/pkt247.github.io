@@ -6,6 +6,12 @@
     
 }
 
+
+@keyframes height-inc {
+    from {height: 14rem;}
+    to {height: 16rem;;}
+  }
+
 .container {
     min-width: 100vw;
     min-height: 100vh;
@@ -18,6 +24,7 @@
     background: linear-gradient(to right, #e080a5, #f3a977,
             #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
 }
 
@@ -68,15 +75,23 @@
     padding: 4rem;
     align-items: center;
     justify-content: center;
-    background: #edeeed;
+    background: linear-gradient(135deg, #00ff37, #ff0000);
     border-radius: 16px;
     margin: 16px;
 }
 
+
+
 .row img {
     height: 14rem;
+    border-radius: 10px;
 }
 
+.row img:hover{
+    animation-name: height-inc;
+    animation-duration: 1s;
+    height: 16rem;
+}
 
 @media (max-width:500px) {
     .row {
