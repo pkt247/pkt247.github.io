@@ -16,3 +16,4 @@ window.onload = function () {
         localStorage.setItem("mytheme", newTheme);
     }
 };
+
