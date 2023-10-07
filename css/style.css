@@ -22,37 +22,47 @@
 }
 
 @keyframes height-inc {
-    from {height: 14rem;}
-    to {height: 18rem;;}
-  }
+    from {
+        height: 14rem;
+    }
 
+    to {
+        height: 18rem;
+        ;
+    }
+}
+
+.list{ margin: 2rem;}
 
 .default {
     --primary-color: rgb(193 193 193 / 89%);
-    --background-default: linear-gradient(135deg, rgb(255, 255, 255) ,rgb(0, 247, 255));
+    --background-default: linear-gradient(135deg, rgb(255, 255, 255), rgb(0, 247, 255));
     --in-default: #fff;
     --hover: rgb(174, 0, 255);
     --contact-color: antiquewhite;
-    --text: black;
+    --text: #000000;
+    --head: linear-gradient(90deg, rgba(207, 255, 253, 0.836), rgba(0, 255, 179, 0.904));
+    ;
 }
 
 .dark {
     --primary-color: #071424a8;
-    --background-default: linear-gradient( 90deg, rgba(0, 0, 0, 0.836) ,rgba(20, 0, 13, 0.904));
+    --background-default: linear-gradient(90deg, rgba(58, 56, 56, 0.836), rgba(37, 32, 36, 0.904));
     --in-default: #323232;
     --hover: #010408a8;
     --contact-color: rgb(141 155 151 / 37%);
     --text: #fff;
+    --head: linear-gradient(90deg, rgba(24, 22, 22, 0.836), rgba(37, 32, 36, 0.904));
 }
 
 .body {
     background: var(--background-default);
 }
 
-a:hover{
-    color:var(--hover);
+a:hover {
+    color: var(--hover);
     font-size: 14px;
-    transition:  0.5sec ease-in;
+    transition: 0.5sec ease-in;
 }
 
 /* header css */
@@ -62,6 +72,7 @@ a:hover{
     align-items: center;
     padding: 1rem;
     width: 100%;
+    background: var(--head)
 }
 
 .logo {
@@ -76,10 +87,12 @@ a:hover{
 }
 
 .slink {
+    color: rgb(51, 255, 0);
     margin: 1em 1rem 1rem 24rem;
 }
 
 .srlink {
+    color: rgb(51, 255, 0);
     margin: 1em 24rem 1rem 1rem;
 }
 
@@ -104,7 +117,7 @@ a:hover{
     border-radius: 3rem;
 }
 
-.image img:hover{
+.image img:hover {
     animation-name: height-inc;
     animation-duration: 4s;
 }
@@ -161,18 +174,15 @@ a:hover{
     }
 
     .text-intro {
-        margin: 1rem;
         padding: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         width: 40%;
     }
 
     .intro {
         margin: 1rem;
         padding: 1rem;
-
     }
-
 
     .footer {
         width: 80vw;
@@ -202,7 +212,7 @@ a:hover{
     }
 }
 
-@media (max-width:263px) {
+@media (max-width:335px) {
 
     * {
         overflow-x: auto;
@@ -220,8 +230,8 @@ a:hover{
         -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
     }
 
-    .image {
-        display: none;
+    .image img {
+        height: 9rem;
     }
 
     .text-intro {
@@ -233,5 +243,11 @@ a:hover{
     .logo {
         font-size: 16px;
         padding: 0;
+    }
+}
+
+@media (max-width:179px) {
+    .image img {
+        height: 4rem;
     }
 }
