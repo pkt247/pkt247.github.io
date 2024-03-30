@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='keywords' content='pkt247, Peatik kumar tiwari, pratikkumartiwari'>
+    <meta name="google-site-verification" content="AS6mXIpLassSFvmCxKbiNj4KImi03b8L49oySMTcC-Y" />
+    <title>pkt247</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional styles */
+        body {
+            background: linear-gradient(to bottom right, silver, white);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .intro {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .intro:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            transform: rotate(45deg);
+            transition: opacity 0.5s ease;
+            z-index: -1;
+            /* Adjust the z-index to ensure it's behind the clickable elements */
+        }
+
+
+        .shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transform: rotate(45deg);
+            transition: opacity 0.5s ease;
+            z-index: -1;
+            /* Adjust the z-index to ensure it's behind the clickable elements */
+        }
+
+        .shine:hover:before {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="body bg-gray-50">
+
+    <div>
+        <!-- Header -->
+        <header class="shine text-gray-600 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a href="#" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <span class="ml-3 text-xl">pkt247</span>
+                </a>
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                    <a href="./about.html" class="mr-5 hover:text-gray-900">About</a>
+                    <a href="https://pkt247.github.io/neet#PYQs" class="mr-5 hover:text-gray-900">NEET PYQs</a>
+                    <a href="https://pkt247.blogspot.com" class="mr-5 hover:text-gray-900">Blog</a>
+                    <a href="https://github.com/pkt247" class="mr-5 hover:text-gray-900">Github</a>
+                </nav>
+                <a href="https://pkt247.github.io/neet/"
+                    class="shine inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                    NEET
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="intro text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:w-1/2 w-full lg:mb-0 mb-10 lg:pr-10 md:pr-0">
+                    <img class="shine object-cover object-center rounded-lg"
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-Ln3uQq0Wvy_qMXJiOTXuvopbLtpksFwkdJyIqpOQw-SgproLqp2lJWAssex_GRdAGd3aDSfjRSZ3ZSZF1_sG356GRoxuSpXlmkJOA4KFk5lJoukb55fFXaWrQ6EbH9jh_1QVMURxC4hPagb0V7GzicZmWL87R5xIOYov8j6tUT91ScIehkITW1oF2v0o/s320/devpic.png"
+                        alt="Pratik Kumar Tiwari">
+                </div>
+                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h1 class="shine title-font text-3xl mb-4 font-medium text-gray-900">Hello! 👋 <br> I'm Pratik Kumar
+                        Tiwari</h1>
+                    <p class="shine mb-4 leading-relaxed">Student with a passion for web development. I'm on a mission
+                        to create a website that serves as a valuable reference for my studies.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3X9HP18BVD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-3X9HP18BVD');
+    </script>
+</body>
+
+</html>

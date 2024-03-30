@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - pkt247</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional styles */
+        body {
+            background: linear-gradient(to bottom right, silver, white);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transform: rotate(45deg);
+            transition: opacity 0.5s ease;
+        }
+
+        .shine:hover:before {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="body bg-gray-50">
+    <header class="shine text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="#" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="ml-3 text-xl">pkt247</span>
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a href="./" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="https://pkt247.github.io/neet#PYQs" class="mr-5 hover:text-gray-900">NEET PYQs</a>
+                <a href="https://pkt247.blogspot.com" class="mr-5 hover:text-gray-900">Blog</a>
+                <a href="https://github.com/pkt247" class="mr-5 hover:text-gray-900">Github</a>
+            </nav>
+            <a href="https://pkt247.github.io/neet/"
+                class="shine inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                NEET
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <div>
+        <section id="about" class="shine bg-gray-100 text-gray-600 body-font py-8 min-">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center">
+                <div class="shine text-xlg w-full md:w-2/3 bg-white rounded-lg p-8 md:p-12">
+                    <h1 class="shine text-3xl mb-4 font-medium text-gray-900">About Me</h1>
+                    <p class="mb-6">Hello! 👋<br>I'm Pratik Kumar Tiwari, a student with a passion for web development.
+                        I'm on a mission to create a website that serves as a valuable reference for my studies.</p>
+
+                    <h2 class="shine text-2xl mb-4 font-medium text-gray-900">📚 My Study Companion</h2>
+                    <p class="mb-6 ">As a student, I understand the importance of organized resources. That's why I've
+                        embarked on a web development journey to build a website tailored to my class 11 & 12
+                        curriculum. This website will contain essential notes, study materials, and interactive elements
+                        to enhance my learning experience.</p>
+
+                    <h2 class="shine text-2xl mb-4 font-medium text-gray-900">🌟 Future Goals</h2>
+                    <p class="mb-6">My goal is to not only create a study resource for myself but also to share it with
+                        fellow students, making the learning process more accessible and enjoyable. Join me on this
+                        educational adventure, and together, we'll navigate the exciting world of web development while
+                        enhancing our NEET Preparation!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="shine text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <ul class="flex">
+                <li class="mr-4"><a href="#about" class="hover:text-gray-900">About</a></li>
+                <li class="mr-4"><a href="./pay.html" class="hover:text-gray-900">Payment</a></li>
+                <li><a href="https://github.com/pkt247" class="hover:text-gray-900">Github</a></li>
+            </ul>
+            <div class="ml-auto">
+                <a href="https://pkt247.github.io" target="_blank" class="shine text-gray-500">
+                    <small class="shine ml-4">Copyright &copy; pkt247</small>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
